@@ -10,8 +10,9 @@ const adminRoutes = require('./routes/admin.routes');
 
 const app = express();
 
-
+// Get the current directory path for CommonJS (No need to declare `__dirname` manually)
 const __dirname = path.resolve();
+
 // Connect to MongoDB
 connectDB();
 
@@ -54,4 +55,4 @@ if (process.env.NODE_ENV === "production") {
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
-}); 
+});
