@@ -1,0 +1,13 @@
+{
+  "name": "gym",
+  "version": "1.0.0",
+  "description": "A full-stack gym reservation application built with the MERN stack (MongoDB, Express.js, React.js, Node.js).",
+  "main": "index.js",
+  "scripts": {
+    "build":"npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "start":"npm run start --prefix backend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
